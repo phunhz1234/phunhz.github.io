@@ -1,0 +1,1600 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Chinese,Western, food, ChWes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ChWes Restaurant's Menu</title>
+    <link href="../../navigation/navigation.css" rel="stylesheet" />
+    <link href="../../navigation/login.css" rel="stylesheet" />
+    <link href="chwes_menu1.css" rel="stylesheet" />
+    <link href="chwes_menu1_style.css" rel="stylesheet" />
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+           
+            <ul class="topnav">
+                
+                <div class="centered_nav" id="sidenav">
+                    <!-- centered links -->
+                    <li><a href="../About Us/chwes_aboutUs.html" class="cool-link">About us</a></li>
+                    <li><a href="chwes_valueSetMeal.html" class="cool-link">Menu</a></li>
+                    <li><a href="../../harini/home page/home_page.html" id="home" >ChWes</a></li>
+
+                    <div class="dropdown">
+                        <li><button class="dropdownbtn">Support</button>
+                           <div class="dropdown_content">
+                                <a href="../../shau yhong xuan/customer feedback/customer_feedback.html">Customer Feedback</a>
+                                <a href="../../shau yhong xuan/contact us/contact_us.html">Contact us</a>
+                                <a href="../../David/faq/faq.html">FAQ</a>
+                            </div>
+                        </li>
+                    </div>
+
+                    <div class="dropdown">
+                        <li><button class="dropdownbtn">Account</button>
+                            <div class="dropdown_content">
+                                <a href="../../waichong/product tracking/delivery product.html">Order tracking</a>
+                                <a href="../../harini/reservation/reservation/reservation.html">Reservation</a>
+                                
+                            </div>
+                        </li>
+                    </div>
+                    
+                </div>
+               
+                <div class="right_nav"><!-- right-alligned links -->
+                    <li class="navright"><a href="../../waichong/add in cart/add to cart.html"><i class="fas   fa-shopping-cart"style="font-size:20px;"></i></a></li>
+                    <li class="navright" onclick="openForm()" style="cursor:pointer; ">
+                        <i class="far   fa-user"></i>
+                    </li>
+                </div>
+
+                <div class=openCloseBar>
+                    <button class="openBar" onclick="openSidebar()">&#9776;</button>
+                    <div id="mySideBar">
+                        
+                        <span onclick="closeSidebar()" class="closeBar">X</span>
+                        
+                        <li><a href="../About Us/chwes_aboutUs.html">About us</a></li>
+                        <li><a href="chwes_valueSetMeal.html">Menu</a></li>
+                        <li><a href="../../harini/reservation/reservation/reservation.html">Reservation</a></li>
+                        <li><a href="../../waichong/product tracking/delivery product.html">Order tracking</a></li>
+                        <li><a href="../../shau yhong xuan/customer feedback/customer_feedback.html">Customer Feedback</a></li>
+                        <li><a href="../../shau yhong xuan/contact us/contact_us.html">Contact us</a></li>
+                        <li><a href="../../David/faq/faq.html">FAQ</a></li>
+                        <li><a href="../../waichong/add in cart/add to cart.html"><i class="fas fa-shopping-cart" style="font-size:20px;"> </i><b>  SHOPPING CART</b></a></li>
+                        
+                    </div>
+                </div>
+                
+            </ul>
+        </nav> 
+        <!--Pop up Login form-->
+        <div id="loginForm" class="pop-upForm" style="display:none; background-color:rgb(255,255,255);">
+            <form method="post">
+                <span onclick="closeForm()">
+                    <i class="fa">&#xf00d;</i>
+                </span>
+                <br>
+                <h2 style="text-align:center;">Login Form</h2>
+    
+
+                <div class="fillUp">
+                    <label for="username"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="username" required>
+                
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+                        
+                    <div id="rememberMe">
+                        <input type="checkbox" name="remember" id="rmb" checked > Remember Me
+                    </div>
+
+                    <input type="submit" value="Login">
+                    <input type="reset" value="Clear">
+
+                    <div class="psw" style="text-align:right;">Forgot <a href="#">password?</a></div>
+                </div>
+
+                <div class="newUser" style="text-align:center; padding-bottom:10px;">
+                    New User?<a href="../../David/membership/signUp.html">Sign Up for Free!</a>
+                </div>
+            </form>
+        </div>
+    </header>
+    <section>
+        <div class="banner">
+        <img src="banner.png" alt="Banner" >
+        <div class="centered">Menu</div>
+        </div>
+        <h3>" We serve all types of food that can overwhelm your taste buds. "</h3>
+    </section>
+    <hr>
+    <div id="choice">        
+        <nav>
+            <ul>
+            <li><a href="chwes_valueSetMeal.html">Set</a></li>
+            <li><a href="chwes_breakfast.html">Breakfast</a></li>
+            <li><a href="chwes_westernFood.html">Western</a></li>
+            <li><a href="chwes_chineseFood.html">Chinese</a></li>
+            <li><a href="chwes_snack.html">Snack</a></li>
+            <li><a href="chwes_drinks.html">Drinks</a></li>
+        </ul>
+        </nav>
+    </div>
+    <hr>
+    <div class="menu">
+        <button class="block">Pancake</button>
+        <div class="row">
+            <div class="column" >
+                <a href="../Menu Description/Breakfast/chwes_blueberryPancakeHoney.html"><img src="Breakfast/chwes_blueberryPancakeWithHoney.jpg" alt="Blueberry Pancake with Honey"></a>
+            </div>
+            <div class="column">
+                <a href="../Menu Description/Breakfast/chwes_strawberryPancakeHoney.html"><img src="Breakfast/chwes_strawberryPancakeWithHoney.jpg" alt="Strawberry Pancake with Honey"></a>
+            </div>
+            <div class="column">
+                <a href="../Menu Description/Breakfast/chwes_chocolatePancake.html"><img src="Breakfast/chwes_pancakeWithChocolateSauce.jpg" alt="Pancake with Chocolate Sauce" style="margin-bottom:30px;"></a>
+            </div>
+        </div>
+
+        <button class="block">Toast</button>
+        <div class="row">
+            <div class="column">       
+                 <a href="../Menu Description/Breakfast/chwes_eggToast.html"><img src="Breakfast/chwes_eggToast.jpg" alt="Egg Toast"></a>
+            </div>
+            <div class="column">        
+                <a href="../Menu Description/Breakfast/chwes_toastWithBacon.html"><img src="Breakfast/chwes_toastWithBacons.jpg" alt="Toast & Bacons"style="margin-bottom:30px;"></a>
+            </div>        
+        </div>
+
+        <button class="block">Full Breakfast</button>
+        <div class="row">
+            <div class="column">           
+                <a href="../Menu Description/Breakfast/chwes_breakfast1.html"><img src="Breakfast/chwes_breakfast1.jpg" alt="Breakfast1"></a>
+            </div>
+            <div class="column">         
+                <a href="../Menu Description/Breakfast/chwes_breakfast2.html"><img src="Breakfast/chwes_breakfast2.jpg" alt="Breakfast2"></a>
+            </div>
+            <div class="column">        
+                <a href="../Menu Description/Breakfast/chwes_breakfast3.html"><img src="Breakfast/chwes_breakfast3.jpg" alt="Breakfast3"></a>
+            </div>
+            <div class="column">         
+                <a href="../Menu Description/Breakfast/chwes_breakfast4.html"><img src="Breakfast/chwes_breakfast4.jpg" alt="Breakfast4"></a>
+            </div>
+        </div>
+    </div>
+    <script>
+        
+        closeSidebar();
+        function openSidebar() {
+        document.getElementById("mySideBar").style.display = "block";
+        }
+        
+        function closeSidebar() {
+        document.getElementById("mySideBar").style.display = "none";
+        }
+        function closeForm(){
+            document.getElementById("loginForm").style.display="none";
+        }
+        function openForm(){
+            document.getElementById("loginForm").style.display="block";
+        }
+    </script>
+    <footer>
+        <p>
+            ChWes restaurant is now available online.
+            <br/>
+            The 2200-22-2200 hotline has been started from 1st July 2020 onwards.
+            <br/>
+            Phone:<a href="tel:2200-20-2200" >2200-20-2200</a> &emsp;
+            Email:<a href="chwes@gmail.com"> chwes@gmail.com</a>
+        </p> 
+    </footer>
+
+
+</body>
+
+</html>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="Chinese,Western, food, ChWes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ChWes Restaurant's Menu</title>
+    <link href="../../navigation/navigation.css" rel="stylesheet" />
+    <link href="chwes_menu1.css" rel="stylesheet" />
+    <link href="chwes_menu1_style.css" rel="stylesheet" />
+    <link href="../../navigation/login.css" rel="stylesheet" />
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+
+</head>
+
+<body>
+    <header>
+        <nav>
+           
+            <ul class="topnav">
+                
+                <div class="centered_nav" id="sidenav">
+                    <!-- centered links -->
+                    <li><a href="../About Us/chwes_aboutUs.html" class="cool-link">About us</a></li>
+                    <li><a href="chwes_valueSetMeal.html" class="cool-link">Menu</a></li>
+                    <li><a href="../../harini/home page/home_page.html" id="home" >ChWes</a></li>
+
+                    <div class="dropdown">
+                        <li><button class="dropdownbtn">Support</button>
+                           <div class="dropdown_content">
+                                <a href="../../shau yhong xuan/customer feedback/customer_feedback.html">Customer Feedback</a>
+                                <a href="../../shau yhong xuan/contact us/contact_us.html">Contact us</a>
+                                <a href="../../David/faq/faq.html">FAQ</a>
+                            </div>
+                        </li>
+                    </div>
+
+                    <div class="dropdown">
+                        <li><button class="dropdownbtn">Account</button>
+                            <div class="dropdown_content">
+                                <a href="../../waichong/product tracking/delivery product.html">Order tracking</a>
+                                <a href="../../harini/reservation/reservation/reservation.html">Reservation</a>
+                                
+                            </div>
+                        </li>
+                    </div>
+                    
+                </div>
+               
+                <div class="right_nav"><!-- right-alligned links -->
+                    <li class="navright"><a href="../../waichong/add in cart/add to cart.html"><i class="fas   fa-shopping-cart"style="font-size:20px;"></i></a></li>
+                    <li class="navright" onclick="openForm()" style="cursor:pointer; ">
+                        <i class="far   fa-user"></i>
+                    </li>
+                </div>
+
+                <div class=openCloseBar>
+                    <button class="openBar" onclick="openSidebar()">&#9776;</button>
+                    <div id="mySideBar">
+                        
+                        <span onclick="closeSidebar()" class="closeBar">X</span>
+                        
+                        <li><a href="../About Us/chwes_aboutUs.html">About us</a></li>
+                        <li><a href="chwes_valueSetMeal.html">Menu</a></li>
+                        <li><a href="../../harini/reservation/reservation/reservation.html">Reservation</a></li>
+                        <li><a href="../../waichong/product tracking/delivery product.html">Order tracking</a></li>
+                        <li><a href="../../shau yhong xuan/customer feedback/customer_feedback.html">Customer Feedback</a></li>
+                        <li><a href="../../shau yhong xuan/contact us/contact_us.html">Contact us</a></li>
+                        <li><a href="../../David/faq/faq.html">FAQ</a></li>
+                        <li><a href="../../waichong/add in cart/add to cart.html"><i class="fas fa-shopping-cart" style="font-size:20px;"> </i><b>  SHOPPING CART</b></a></li>
+                        
+                    </div>
+                </div>
+                
+                
+            </ul>
+        </nav> 
+        <!--Pop up Login form-->
+        <div id="loginForm" class="pop-upForm" style="display:none; background-color:rgb(255,255,255);">
+            <form method="post">
+                <span onclick="closeForm()">
+                    <i class="fa">&#xf00d;</i>
+                </span>
+                <br>
+                <h2 style="text-align:center;">Login Form</h2>
+    
+
+                <div class="fillUp">
+                    <label for="username"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="username" required>
+                
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+                        
+                    <div id="rememberMe">
+                        <input type="checkbox" name="remember" id="rmb" checked > Remember Me
+                    </div>
+
+                    <input type="submit" value="Login">
+                    <input type="reset" value="Clear">
+
+                    <div class="psw" style="text-align:right;">Forgot <a href="#">password?</a></div>
+                </div>
+
+                <div class="newUser" style="text-align:center; padding-bottom:10px;">
+                    New User?<a href="../../David/membership/signUp.html">Sign Up for Free!</a>
+                </div>
+            </form>
+        </div>
+    </header>
+    
+    <section>
+        <div class="banner">
+        <img src="banner.png" alt="Banner" >
+        <div class="centered">Menu</div>
+        </div>
+        <h3>" We serve all types of food that can overwhelm your taste buds. "</h3>
+
+    </section>
+    <hr>
+    <div id="choice">        
+        <nav>
+            <ul>
+            <li><a href="chwes_valueSetMeal.html">Set</a></li>
+            <li><a href="chwes_breakfast.html">Breakfast</a></li>
+            <li><a href="chwes_westernFood.html">Western</a></li>
+            <li><a href="chwes_chineseFood.html">Chinese</a></li>
+            <li><a href="chwes_snack.html">Snack</a></li>
+            <li><a href="chwes_drinks.html">Drinks</a></li>
+        </ul>
+        </nav>
+    </div>
+    <hr>
+    <div class="menu">
+        <button class="block">Rice</button>
+        <div class="row">
+            <div class="column" >
+                <a href="../Menu Description/Chinese Food/chwes_shrimpFriedRice.html"><img src="Chinese Food/chwes_shrimpFriedRice.jpg" alt="Shrimp Fried Rice"></a>
+            </div>
+            <div class="column">        
+                <a href="../Menu Description/Chinese Food/chwes_eggFriedRice.html"><img src="Chinese Food/chwes_eggFriedRice.jpg" alt="Egg Fried Rice"></a>
+            </div>
+            <div class="column">       
+                <a href="../Menu Description/Chinese Food/chwes_saltedEggChickenRice.html"><img src="Chinese Food/chwes_saltedEggChickenRice.jpg" alt="Salted Egg Chicken Rice"></a>
+            </div>
+        </div>
+     
+        <button class="block">Noodle</button>
+        <div class="row">
+            <div class="column" >       
+                <a href="../Menu Description/Chinese Food/chwes_friedBihun.html"><img src="Chinese Food/chwes_friedBihun.jpg" alt="Fried Bihun"></a>
+            </div>
+            <div class="column">          
+                <a href="../Menu Description/Chinese Food/chwes_wontonMee.html"><img src="Chinese Food/chwes_wontonMee.jpg" alt="Wonton Mee"></a>
+            </div>
+            <div class="column">    
+                <a href="../Menu Description/Chinese Food/chwes_curryNoodleSoup.html"><img src="Chinese Food/chwes_curryNoodleSoup.jpeg" alt="Curry Noodle Soup"></a>
+            </div>
+            <div class="column">         
+                <a href="../Menu Description/Chinese Food/chwes_noodleSoup.html"><img src="Chinese Food/chwes_noodleSoup.jpg" alt="Noodle Soup"></a>
+            </div>
+        </div>
+          
+        <button class="block">DimSum</button>
+        <div class="row">
+            <div class="column" >         
+                <a href="../Menu Description/Chinese Food/chwes_springRoll.html"><img src="Chinese Food/chwes_springRoll.jpg" alt="Spring Roll"></a>
+            </div>
+            <div class="column">         
+                <a href="../Menu Description/Chinese Food/chwes_steamedDumpling.html"><img src="Chinese Food/chwes_steamedDumpling.jpg" alt="Steamed Dumpling"></a>
+            </div>
+            <div class="column">        
+                <a href="../Menu Description/Chinese Food/chwes_friedDumpling.html"><img src="Chinese Food/chwes_pan-FriedDumplings.jpg" alt="Fried Dumpling"></a>
+            </div>
+            <div class="column">         
+                <a href="../Menu Description/Chinese Food/chwes_prawnDumpling.html"><img src="Chinese Food/chwes_prawnDumpling.jpg" alt="PrawnDumpling"></a>
+            </div>
+            <div class="column">         
+                <a href="../Menu Description/Chinese Food/chwes_prawnBeancurdRoll.html"><img src="Chinese Food/chwes_prawnBeancurdRoll.jpg" alt="Prawn Beancurd Roll"></a>
+            </div>
+            <div class="column">        
+                <a href="../Menu Description/Chinese Food/chwes_xiaoLongBao.html"><img src="Chinese Food/chwes_xiaoLongBao.jpg" alt="Xiao Long Bao"></a>
+            </div>
+            <div class="column">         
+                <a href="../Menu Description/Chinese Food/chwes_steamedBuns.html"><img src="Chinese Food/chwes_steamedBuns.jpg" alt="Steamed Buns"></a>
+            </div>
+    
+        </div>
+    </div>
+
+    <script>
+        closeSidebar();
+        function openSidebar() {
+            document.getElementById("mySideBar").style.display = "block";
+        }
+            
+        function closeSidebar() {
+            document.getElementById("mySideBar").style.display = "none";
+        }
+        function closeForm(){
+            document.getElementById("loginForm").style.display="none";
+        }
+        function openForm(){
+            document.getElementById("loginForm").style.display="block";
+        }
+    </script>
+    <footer>
+        <p>
+            ChWes restaurant is now available online.
+            <br/>
+            The 2200-22-2200 hotline has been started from 1st July 2020 onwards.
+            <br/>
+            Phone:<a href="tel:2200-20-2200" >2200-20-2200</a> &emsp;
+            Email:<a href="chwes@gmail.com"> chwes@gmail.com</a>
+        </p> 
+    </footer>
+
+
+</body>
+
+</html>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="Chinese,Western, food, ChWes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ChWes Restaurant's Menu</title>
+    <link href="../../navigation/navigation.css" rel="stylesheet" />
+    <link href="chwes_menu1.css" rel="stylesheet" />
+    <link href="chwes_menu1_style.css" rel="stylesheet" />
+    <link href="../../navigation/login.css" rel="stylesheet" />
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+           
+            <ul class="topnav">
+                
+                <div class="centered_nav" id="sidenav">
+                    <!-- centered links -->
+                    <li><a href="../About Us/chwes_aboutUs.html" class="cool-link">About us</a></li>
+                    <li><a href="chwes_valueSetMeal.html" class="cool-link">Menu</a></li>
+                    <li><a href="../../harini/home page/home_page.html" id="home" >ChWes</a></li>
+
+                    <div class="dropdown">
+                        <li><button class="dropdownbtn">Support</button>
+                           <div class="dropdown_content">
+                                <a href="../../shau yhong xuan/customer feedback/customer_feedback.html">Customer Feedback</a>
+                                <a href="../../shau yhong xuan/contact us/contact_us.html">Contact us</a>
+                                <a href="../../David/faq/faq.html">FAQ</a>
+                            </div>
+                        </li>
+                    </div>
+
+                    <div class="dropdown">
+                        <li><button class="dropdownbtn">Account</button>
+                            <div class="dropdown_content">
+                                <a href="../../waichong/product tracking/delivery product.html">Order tracking</a>
+                                <a href="../../harini/reservation/reservation/reservation.html">Reservation</a>
+                                
+                            </div>
+                        </li>
+                    </div>
+                    
+                </div>
+               
+                <div class="right_nav"><!-- right-alligned links -->
+                    <li class="navright"><a href="../../waichong/add in cart/add to cart.html"><i class="fas   fa-shopping-cart"style="font-size:20px;"></i></a></li>
+                    <li class="navright" onclick="openForm()" style="cursor:pointer; ">
+                        <i class="far   fa-user"></i>
+                    </li>
+                </div>
+
+                <div class=openCloseBar>
+                    <button class="openBar" onclick="openSidebar()">&#9776;</button>
+                    <div id="mySideBar">
+                        
+                        <span onclick="closeSidebar()" class="closeBar">X</span>
+                        
+                        <li><a href="../About Us/chwes_aboutUs.html">About us</a></li>
+                        <li><a href="chwes_valueSetMeal.html">Menu</a></li>
+                        <li><a href="../../harini/reservation/reservation/reservation.html">Reservation</a></li>
+                        <li><a href="../../waichong/product tracking/delivery product.html">Order tracking</a></li>
+                        <li><a href="../../shau yhong xuan/customer feedback/customer_feedback.html">Customer Feedback</a></li>
+                        <li><a href="../../shau yhong xuan/contact us/contact_us.html">Contact us</a></li>
+                        <li><a href="../../David/faq/faq.html">FAQ</a></li>
+                        <li><a href="../../waichong/add in cart/add to cart.html"><i class="fas fa-shopping-cart" style="font-size:20px;"> </i><b>  SHOPPING CART</b></a></li>
+                        
+                    </div>
+                </div>
+                
+            </ul>
+        </nav> 
+        <!--Pop up Login form-->
+        <div id="loginForm" class="pop-upForm" style="display:none; background-color:rgb(255,255,255);">
+            <form method="post">
+                <span onclick="closeForm()">
+                    <i class="fa">&#xf00d;</i>
+                </span>
+                <br>
+                <h2 style="text-align:center;">Login Form</h2>
+    
+
+                <div class="fillUp">
+                    <label for="username"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="username" required>
+                
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+                        
+                    <div id="rememberMe">
+                        <input type="checkbox" name="remember" id="rmb" checked > Remember Me
+                    </div>
+
+                    <input type="submit" value="Login">
+                    <input type="reset" value="Clear">
+
+                    <div class="psw" style="text-align:right;">Forgot <a href="#">password?</a></div>
+                </div>
+
+                <div class="newUser" style="text-align:center; padding-bottom:10px;">
+                    New User?<a href="../../David/membership/signUp.html">Sign Up for Free!</a>
+                </div>
+            </form>
+        </div>
+    </header>
+    <section>
+        <div class="banner">
+        <img src="banner.png" alt="Banner" >
+        <div class="centered">Menu</div>
+        </div>
+        <h3>" We serve all types of food that can overwhelm your taste buds. "</h3>
+    </section>
+    <hr>
+    <div id="choice">        
+        <nav>
+            <ul>
+            <li><a href="chwes_valueSetMeal.html">Set</a></li>
+            <li><a href="chwes_breakfast.html">Breakfast</a></li>
+            <li><a href="chwes_westernFood.html">Western</a></li>
+            <li><a href="chwes_chineseFood.html">Chinese</a></li>
+            <li><a href="chwes_snack.html">Snack</a></li>
+            <li><a href="chwes_drinks.html">Drinks</a></li>
+        </ul>
+        </nav>
+    </div>
+    <hr>
+    <div class="menu">
+        <button class="block">Coffee</button>
+        <div class="row">
+            <div class="column" >
+                <a href="../Menu Description/Drinks/chwes_latte.html"><img src="Drink/chwes_latte.jpg" alt="Latte"></a>
+            </div>
+            <div class="column">         
+                <a href="../Menu Description/Drinks/chwes_cappuccino.html"><img src="Drink/chwes_cappuccino.jpg" alt="Cappuccino"></a>
+            </div>
+            <div class="column">          
+                <a href="../Menu Description/Drinks/chwes_espresso.html"><img src="Drink/chwes_espresso.jpg" alt="Espresso"></a>
+            </div>
+        </div>       
+        <button class="block">Tea</button>
+        <div class="row">
+            <div class="column" >        
+                <a href="../Menu Description/Drinks/chwes_lemonTea.html"><img src="Drink/chwes_lemonTea.jpg" alt="Lemon Tea"></a>
+            </div>
+            <div class="column">        
+                <a href="../Menu Description/Drinks/chwes_greenTea.html"><img src="Drink/chwes_greenTea.jpg" alt="Green Tea"></a>
+            </div>
+            <div class="column">         
+                <a href="../Menu Description/Drinks/chwes_bubbleMilkTea.html"><img src="Drink/chwes_bubbleMilkTea.jpg" alt="Bubble Milk Tea"></a>
+            </div>
+        </div>     
+        <button class="block">Juice</button>
+        <div class="row">
+            <div class="column" >        
+                <a href="../Menu Description/Drinks/chwes_orangeJuice.html"><img src="Drink/chwes_orangeJuice.jpg" alt="Orange Juice"></a>
+            </div>
+            <div class="column">        
+                <a href="../Menu Description/Drinks/chwes_watermelonJuice.html"><img src="Drink/chwes_watermelonJuice.jpg" alt="Watermelon Juice"></a>
+            </div>
+            <div class="column">        
+                <a href="../Menu Description/Drinks/chwes_mangoJuice.html"><img src="Drink/chwes_mangoJuice.jpg" alt="Mango Juice"></a>
+            </div>
+            <div class="column">        
+                <a href="../Menu Description/Drinks/chwes_lemonJuice.html"><img src="Drink/chwes_lemonJuice.jpg" alt="Lemon Juice"></a>
+            </div>
+            <div class="column">        
+                <a href="../Menu Description/Drinks/chwes_passionFruitJuice.html"><img src="Drink/chwes_passionFruitJuice.jpg" alt="Passion Fruit Juice"></a>
+            </div>  
+        </div>
+
+        <button class="block">Milk Shake</button>
+        <div class="row">
+            <div class="column" >  
+                <a href="../Menu Description/Drinks/chwes_oreoMilkShake.html"><img src="Drink/chwes_oreoMilkShake.jpg" alt="Oreo Milk Shake"></a>
+            </div>
+            <div class="column">         
+                <a href="../Menu Description/Drinks/chwes_chocolateMilkShake.html"><img src="Drink/chwes_chocolateMilkShake.jpg" alt="Chocolate Milk Shake"></a>
+            </div>
+            <div class="column">        
+                <a href="../Menu Description/Drinks/chwes_strawberryMilkShake.html"><img src="Drink/chwes_strawberryMilkShake.jpg" alt="Strawberry Milk Shake"></a>
+            </div>  
+        </div>
+
+        <button class="block">Others</button>
+        <div class="row">
+            <div class="column" >
+                <a href="../Menu Description/Drinks/chwes_water.html"><img src="Drink/chwes_water.jpg" alt="Mineral Water"></a>
+            </div>
+        </div>
+    </div>
+    <script>
+        closeSidebar();
+        function openSidebar() {
+            document.getElementById("mySideBar").style.display = "block";
+        }
+            
+        function closeSidebar() {
+            document.getElementById("mySideBar").style.display = "none";
+        }
+        function closeForm(){
+            document.getElementById("loginForm").style.display="none";
+        }
+        function openForm(){
+            document.getElementById("loginForm").style.display="block";
+        }
+    </script>
+    <footer>
+        <p>
+            ChWes restaurant is now available online.
+            <br/>
+            The 2200-22-2200 hotline has been started from 1st July 2020 onwards.
+            <br/>
+            Phone:<a href="tel:2200-20-2200" >2200-20-2200</a> &emsp;
+            Email:<a href="chwes@gmail.com"> chwes@gmail.com</a>
+        </p> 
+    </footer>
+
+
+</body>
+
+</html>
+@charset "utf-8";
+
+
+
+
+
+
+/*Structure Styles*/
+body { 
+  min-width: 320px;
+  width: 100%;
+  background-image:url(../Menu/chwes_backgroundImage.jpg);
+  background-size:100%;
+  background-color: #cccccc;
+  height: auto;
+}
+
+  
+
+/*Navigation Styles*/
+#choice nav {
+	display: table;
+	width: 100%;
+}
+#choice nav > ul {
+	display: table-row;
+}
+#choice nav > ul > li {
+  display: table-cell;
+  width:16.66%;
+	text-align: center;
+}
+
+#choice nav a {
+  font-size: 25px;
+	font-family: 'Trebuchet MS', Helvetica, sans-serif;	
+}
+
+#choice nav a:link, nav a:visited {
+	color:black;
+	text-decoration: none;
+}
+/*Hover changed*/
+#choice a:hover, #choice a:active {
+	color: rgba(255, 255, 255, 0.7);
+}
+
+
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none; margin-top:145px;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+
+max-width: 1000px;
+position: relative;
+margin: auto;
+}
+/* The dots/bullets/indicators */
+.dot {
+height: 10px;
+width: 10px;
+margin: 0 2px;
+background-color: #bbb;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease;
+}
+
+/*Banner Styles*/
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-size:50px
+
+}
+.banner{
+  display:block;
+  position: relative;
+  margin-top:10%;
+}
+
+.banner img{
+  margin:auto;
+  width:40%;
+  height:auto;
+  max-width:100%;
+
+}
+/*Section styles*/
+h1{
+  font-size:50px;
+  text-align:center;
+}
+h3{
+  font-size:50px;
+  font-family:'Brush Script MT', 'Brush Script Std', cursive;
+  text-align:center;
+  margin:5px 0px 30px;
+}
+hr {
+  border: 1px solid grey;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/*Block Styles*/
+  .block {
+  background-color:linear-gradient(to bottom, #e6e6e6 0%, #ffffff 100%);
+  color: black;
+  font-size: 20px;
+  text-align: center;
+  display: block;
+  width: 100%;
+  border: none;
+  padding: 14px 28px;
+  margin-top:30px;
+  margin-bottom:10px;
+
+}
+
+
+/*Image Style*/
+.menu{
+  margin-top:50px;
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+    max-width: 1500px;
+ 
+}
+  img {
+    width:100%;
+    height:250px;
+  display:block;   
+  max-width:100%;
+  }
+
+.centered{
+  font-size:40px;
+  font-family:"Comic Sans MS", cursive,sans-serif;
+}
+/*Create image side by side*/
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+    position: relative;
+  }
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+ /*Block Styles*/
+ .block {
+    background-color:linear-gradient(to bottom, #e6e6e6 0%, #ffffff 100%);
+    color: black;
+    font-size: 20px;
+    text-align: center;
+ }
+
+ /*Order*/
+ .bigImage img{
+    width:70%;
+    height:400px;
+    margin-left:150px;
+    margin-bottom:30px;
+ }
+ #Order{
+      width:30px;
+      height:30px;
+      margin:30px;
+      display:right;
+      cursor: pointer;
+ }
+.title{
+  font-size:40px;
+  text-align:center;
+  margin-bottom:20px;
+}
+ .word{
+   font-size:25px;
+   text-align:center;
+ }
+ .price{
+   text-align:right;
+   font-size:35px;
+ }
+ .Option{
+    font-size:30px;
+   margin-left:30px;
+ }
+ label{
+  font-size:25px;
+}
+
+ input[type="submit"] {
+  height: 50px;
+  width: 200px;
+  font-size:25px;
+  margin-left:75%;
+  margin-top:20px;
+}
+input#quantityBox{
+  text-align:center;
+  font-size:18px;
+  width:100px;
+  height:40px;
+  margin-top:70px;
+
+}
+.button{
+  margin-top:4%;
+  font-size:25px;
+  margin-bottom:10%;
+}
+.button a:link,.button a:visited {
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.button a:hover,.button a:active {
+  background-color:rgb(242, 242, 242);
+}
+
+  /*make picture more clear when smaller the screen*/
+  @media only screen and (max-width: 900px) {
+    
+    .column img{
+      width: 100%;
+      height:200px;
+  }
+  
+  }
+
+/* ===============================
+	Mobile Devices: 0 to 480px 
+   ===============================
+*/
+@media only screen and (max-width: 480px) {
+  h3{
+    font-size:30px;
+  }
+  .banner img{
+    width:40%;
+    height:100px;
+  }
+  .centered{
+    font-size:25px;
+  }
+   .menu{
+     width:90%;
+   }
+  .column img{
+     width: 100%;
+     height:100px;
+  }
+  #choice nav a{
+    font-size:15px;
+  }
+  .block{
+  font-size:15px;
+  }
+  .button{
+    font-size:15px;
+    margin-right:5%;
+    margin-bottom:15%;
+  }
+  .button a:link,.button a:visited{
+    padding: 5px 5px;
+  }
+
+}
+
+@media only screen and (max-width: 977px){
+  .mySlides {
+    margin-top:0px;
+  }
+  .banner{
+    margin-top:0px;
+  }
+}
+
+<!DOCTYPE html>
+<html>
+   
+<head>
+   
+    <meta charset="utf-8" />
+    <meta name="keywords" content="Chinese,Western, food, ChWes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ChWes Restaurant's Menu</title>
+    <link href="../../navigation/navigation.css" rel="stylesheet" />
+    <link href="../../navigation/login.css" rel="stylesheet" />
+    <link href="chwes_menu1.css" rel="stylesheet" />
+    <link href="chwes_menu1_style.css" rel="stylesheet" />
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+           
+            <ul class="topnav">
+                
+                <div class="centered_nav" id="sidenav">
+                    <!-- centered links -->
+                    <li><a href="../About Us/chwes_aboutUs.html" class="cool-link">About us</a></li>
+                    <li><a href="chwes_valueSetMeal.html" class="cool-link">Menu</a></li>
+                    <li><a href="../../harini/home page/home_page.html" id="home" >ChWes</a></li>
+
+                    <div class="dropdown">
+                        <li><button class="dropdownbtn">Support</button>
+                           <div class="dropdown_content">
+                                <a href="../../shau yhong xuan/customer feedback/customer_feedback.html">Customer Feedback</a>
+                                <a href="../../shau yhong xuan/contact us/contact_us.html">Contact us</a>
+                                <a href="../../David/faq/faq.html">FAQ</a>
+                            </div>
+                        </li>
+                    </div>
+
+                    <div class="dropdown">
+                        <li><button class="dropdownbtn">Account</button>
+                            <div class="dropdown_content">
+                                <a href="../../waichong/product tracking/delivery product.html">Order tracking</a>
+                                <a href="../../harini/reservation/reservation/reservation.html">Reservation</a>
+                                
+                            </div>
+                        </li>
+                    </div>
+                    
+                </div>
+               
+                <div class="right_nav"><!-- right-alligned links -->
+                    <li class="navright"><a href="../../waichong/add in cart/add to cart.html"><i class="fas   fa-shopping-cart"style="font-size:20px;"></i></a></li>
+                    <li class="navright" onclick="openForm()" style="cursor:pointer;">
+                        <i class="far   fa-user"></i>
+                    </li>
+                </div>
+
+                <div class=openCloseBar>
+                    <button class="openBar" onclick="openSidebar()">&#9776;</button>
+                    <div id="mySideBar">
+                        
+                        <span onclick="closeSidebar()" class="closeBar">X</span>
+                        
+                        <li><a href="../About Us/chwes_aboutUs.html">About us</a></li>
+                        <li><a href="chwes_valueSetMeal.html">Menu</a></li>
+                        <li><a href="../../harini/reservation/reservation/reservation.html">Reservation</a></li>
+                        <li><a href="../../waichong/product tracking/delivery product.html">Order tracking</a></li>
+                        <li><a href="../../shau yhong xuan/customer feedback/customer_feedback.html">Customer Feedback</a></li>
+                        <li><a href="../../shau yhong xuan/contact us/contact_us.html">Contact us</a></li>
+                        <li><a href="../../David/faq/faq.html">FAQ</a></li>
+                        <li><a href="../../waichong/add in cart/add to cart.html"><i class="fas fa-shopping-cart" style="font-size:20px;"> </i><b>  SHOPPING CART</b></a></li>
+                        
+                    </div>
+                </div>
+                
+            </ul>
+        </nav> 
+        <!--Pop up Login form-->
+        <div id="loginForm" class="pop-upForm" style="display:none; background-color:rgb(255,255,255);">
+            <form method="post">
+                <span onclick="closeForm()">
+                    <i class="fa">&#xf00d;</i>
+                </span>
+                <br>
+                <h2 style="text-align:center;">Login Form</h2>
+    
+
+                <div class="fillUp">
+                    <label for="username"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="username" required>
+                
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+                        
+                    <div id="rememberMe">
+                        <input type="checkbox" name="remember" id="rmb" checked > Remember Me
+                    </div>
+
+                    <input type="submit" value="Login">
+                    <input type="reset" value="Clear">
+
+                    <div class="psw" style="text-align:right;">Forgot <a href="#">password?</a></div>
+                </div>
+
+                <div class="newUser" style="text-align:center; padding-bottom:10px;">
+                    New User?<a href="../../David/membership/signUp.html">Sign Up for Free!</a>
+                </div>
+            </form>
+        </div>
+    </header>
+    <section>
+        <div class="banner">
+        <img src="banner.png" alt="Banner" >
+        <div class="centered">Menu</div>
+        </div>
+        <h3>" We serve all types of food that can overwhelm your taste buds. "</h3>
+    </section>
+    <hr>
+    <div id="choice">        
+        <nav>
+            <ul>
+            <li><a href="chwes_valueSetMeal.html">Set</a></li>
+            <li><a href="chwes_breakfast.html">Breakfast</a></li>
+            <li><a href="chwes_westernFood.html">Western</a></li>
+            <li><a href="chwes_chineseFood.html">Chinese</a></li>
+            <li><a href="chwes_snack.html">Snack</a></li>
+            <li><a href="chwes_drinks.html">Drinks</a></li>
+        </ul>
+        </nav>
+    </div>
+    <hr>
+    <div class="menu">
+        <div class="row">
+            <div class="column" >
+                <a href="../Menu Description/Snack/chwes_lavaCake.html"><img src="snack/chwes_lavaCake.jpg" alt="Chocolate Lava Cake"></a>
+            </div>
+            <div class="column"> 
+                <a href="../Menu Description/Snack/chwes_waffle.html"><img src="snack/chwes_waffle.jpg" alt="Waffle"></a>
+            </div>
+            <div class="column"> 
+                <a href="../Menu Description/Snack/chwes_macarons.html"><img src="snack/chwes_macarons.jpg" alt="Macarons"></a>
+            </div>
+            <div class="column"> 
+                <a href="../Menu Description/Snack/chwes_onionFries.html"><img src="snack/chwes_onionFries.jpg" alt="Onion Fries"></a>
+            </div>
+            <div class="column"> 
+                <a href="../Menu Description/Snack/chwes_friedNugget.html"><img src="snack/chwes_friedNugget.jpg" alt="Fried Nugget"></a>
+            </div>
+            <div class="column"> 
+                <a href="../Menu Description/Snack/chwes_frenchFries.html"><img src="snack/chwes_frenchFries.jpg" alt="French Fries"></a>
+            </div>
+            <div class="column"> 
+                <a href="../Menu Description/Snack/chwes_mozzarellaStick.html"><img src="snack/chwes_mozzarellaStick.jpg" alt="Mozzarella Stick"></a>
+            </div>
+            <div class="column"> 
+                <a href="../Menu Description/Snack/chwes_friedScallops.html"><img src="snack/chwes_friedScallops.jpg" alt="Fried Scallops"></a>
+            </div>
+            <div class="column"> 
+                <a href="../Menu Description/Snack/chwes_friedChickenWings.html"><img src="snack/chwes_friedChickenWings.jpg" alt="Fried Chicken Wings"></a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        closeSidebar();
+        function openSidebar() {
+            document.getElementById("mySideBar").style.display = "block";
+        }
+            
+        function closeSidebar() {
+            document.getElementById("mySideBar").style.display = "none";
+        }
+        function closeForm(){
+            document.getElementById("loginForm").style.display="none";
+        }
+        function openForm(){
+            document.getElementById("loginForm").style.display="block";
+        }
+    </script>
+    <footer>
+        <p>
+            ChWes restaurant is now available online.
+            <br/>
+            The 2200-22-2200 hotline has been started from 1st July 2020 onwards.
+            <br/>
+            Phone:<a href="tel:2200-20-2200" >2200-20-2200</a> &emsp;
+            Email:<a href="chwes@gmail.com"> chwes@gmail.com</a>
+        </p> 
+    </footer>
+
+
+
+</body>
+
+</html>
+<!DOCTYPE html>
+<html>
+
+       
+    <head>
+    
+        <meta charset="utf-8" />
+        <meta name="keywords" content="Chinese,Western, food, ChWes" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+        <title>ChWes Restaurant's Menu</title>
+        <link href="../../navigation/navigation.css" rel="stylesheet" />
+        <link href="../../navigation/login.css" rel="stylesheet" />
+        <link href="chwes_menu1.css" rel="stylesheet" />
+        <link href="chwes_menu1_style.css" rel="stylesheet" />
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+    </head>
+    
+    <body>
+        <header>
+            <nav>
+               
+                <ul class="topnav">
+                    
+                    <div class="centered_nav" id="sidenav">
+                        <!-- centered links -->
+                        <li><a href="../About Us/chwes_aboutUs.html" class="cool-link">About us</a></li>
+                        <li><a href="chwes_valueSetMeal.html" class="cool-link">Menu</a></li>
+                        <li><a href="../../harini/home page/home_page.html" id="home" >ChWes</a></li>
+    
+                        <div class="dropdown">
+                            <li><button class="dropdownbtn">Support</button>
+                               <div class="dropdown_content">
+                                    <a href="../../shau yhong xuan/customer feedback/customer_feedback.html">Customer Feedback</a>
+                                    <a href="../../shau yhong xuan/contact us/contact_us.html">Contact us</a>
+                                    <a href="../../David/faq/faq.html">FAQ</a>
+                                </div>
+                            </li>
+                        </div>
+    
+                        <div class="dropdown">
+                            <li><button class="dropdownbtn">Account</button>
+                                <div class="dropdown_content">
+                                    <a href="../../waichong/product tracking/delivery product.html">Order tracking</a>
+                                    <a href="../../harini/reservation/reservation/reservation.html">Reservation</a>
+                                    
+                                </div>
+                            </li>
+                        </div>
+                        
+                    </div>
+                   
+                    <div class="right_nav"><!-- right-alligned links -->
+                        <li class="navright"><a href="../../waichong/add in cart/add to cart.html"><i class="fas   fa-shopping-cart"style="font-size:20px;"></i></a></li>
+                        <li class="navright" onclick="openForm()" style="cursor:pointer; ">
+                            <i class="far fa-user"></i>
+                        </li>
+                    </div>
+    
+                    <div class=openCloseBar>
+                        <button class="openBar" onclick="openSidebar()">&#9776;</button>
+                        <div id="mySideBar">
+                            
+                            <span onclick="closeSidebar()" class="closeBar">X</span>
+                            
+                            <li><a href="../About Us/chwes_aboutUs.html">About us</a></li>
+                            <li><a href="chwes_valueSetMeal.html">Menu</a></li>
+                            <li><a href="../../harini/reservation/reservation/reservation.html">Reservation</a></li>
+                            <li><a href="../../waichong/product tracking/delivery product.html">Order tracking</a></li>
+                            <li><a href="../../shau yhong xuan/customer feedback/customer_feedback.html">Customer Feedback</a></li>
+                            <li><a href="../../shau yhong xuan/contact us/contact_us.html">Contact us</a></li>
+                            <li><a href="../../David/faq/faq.html">FAQ</a></li>
+                            <li><a href="../../waichong/add in cart/add to cart.html"><i class="fas fa-shopping-cart" style="font-size:20px;"> </i><b>  SHOPPING CART</b></a></li>
+                            
+                        </div>
+                    </div>
+                    
+                </ul>
+            </nav> 
+            <!--Pop up Login form-->
+            <div id="loginForm" class="pop-upForm" style="display:none; background-color:rgb(255,255,255);">
+                <form method="post">
+                    <span onclick="closeForm()">
+                        <i class="fa">&#xf00d;</i>
+                    </span>
+                    <br>
+                    <h2 style="text-align:center;">Login Form</h2>
+        
+
+                    <div class="fillUp">
+                        <label for="username"><b>Username</b></label>
+                        <input type="text" placeholder="Enter Username" name="username" required>
+                    
+                        <label for="psw"><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
+                            
+                        <div id="rememberMe">
+                            <input type="checkbox" name="remember" id="rmb" checked > Remember Me
+                        </div>
+
+                        <input type="submit" value="Login">
+                        <input type="reset" value="Clear">
+
+                        <div class="psw" style="text-align:right;">Forgot <a href="#">password?</a></div>
+                    </div>
+
+                    <div class="newUser" style="text-align:center; padding-bottom:10px;">
+                        New User?<a href="../../David/membership/signUp.html">Sign Up for Free!</a>
+                    </div>
+                </form>
+            </div>
+        </header>
+        
+        <div class="slideshow-container">
+
+            <div class="mySlides">
+                <a href="chwes_valueSetMeal.html" ><img src="../Menu/slide1.jpg" alt="Value Set Meal"style="height:auto;max-width:100%;max-height:auto;margin-bottom:5px;" ></a>
+            </div>
+
+            <div class="mySlides">
+                <a href="chwes_breakfast.html" ><img src="../Menu/slide2.jpg" alt="Value Set Meal" style="height:auto;margin-bottom:5px;"></a>
+            </div>
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div>
+        
+       
+        <hr>        
+        <div id="choice">        
+            <nav>
+                <ul>
+                <li><a href="chwes_valueSetMeal.html">Set</a></li>
+                <li><a href="chwes_breakfast.html">Breakfast</a></li>
+                <li><a href="chwes_westernFood.html">Western</a></li>
+                <li><a href="chwes_chineseFood.html">Chinese</a></li>
+                <li><a href="chwes_snack.html">Snack</a></li>
+                <li><a href="chwes_drinks.html">Drinks</a></li>
+            </ul>
+            </nav>
+        </div>
+        <hr>
+        <div class="menu">
+            <button class="block">Step 1: Pick a meal</button>
+            <div class="row">
+                <div class="column">
+                    <img src="Chinese Food/chwes_eggFriedRice.jpg" alt="Egg Fried Rice">
+                </div>
+                <div class="column">
+                    <img src="Western Food/chwes_cabonara.jpg" alt="Cabonara">
+                </div>
+                <div class="column">
+                    <img src="Chinese Food/chwes_noodleSoup.jpg" alt="Noodle Soup" style="margin-bottom:30px">
+                </div>
+            </div>
+
+            <button class="block">Step 2: Pick a drink</button>
+            <div class="row">
+                <div class="column">
+                    <img src="Drink/chwes_lemonTea.jpg" alt="Lemon Tea">
+                </div>
+                <div class="column">
+                    <img src="Drink/chwes_greenTea.jpg" alt="Green Tea">
+                </div>
+                <div class="column">
+                    <img src="Drink/chwes_water.jpg" alt="Mineral Water">
+                </div>
+            </div>
+            <button class="block">Add RM3 GET SNACK</button>
+            <div class="row">
+                <div class="column" id="short">
+                    <img src="snack/chwes_macarons.jpg" alt="Macarons">
+                </div>
+                <div class="column">
+                    <img src="snack/chwes_frenchFries.jpg" alt="French Fries">
+                </div>
+                <div class="column">
+                    <img src="snack/chwes_lavaCake.jpg" alt="Chocolate Lava Cake">
+                </div>
+            </div>
+         
+        </div>
+
+        <div class="button">
+            <a href="../Menu Description/valueSetMeal.html" style="border: 1px solid black;float:right">Start To Order</a>
+        </div>
+        <script>
+                closeSidebar();
+                function openSidebar() {
+                  document.getElementById("mySideBar").style.display = "block";
+                }
+                
+                function closeSidebar() {
+                  document.getElementById("mySideBar").style.display = "none";
+                }
+
+                var slideIndex = 0;
+                showSlides();
+                
+                function showSlides() {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {slideIndex = 1}    
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";  
+                dots[slideIndex-1].className += " active";
+                setTimeout(showSlides, 5000); // Change image every 5 seconds
+                }
+                function closeForm(){
+                document.getElementById("loginForm").style.display="none";
+                }
+                function openForm(){
+                    document.getElementById("loginForm").style.display="block";
+                }
+        </script>
+        <footer>
+            <p>
+                ChWes restaurant is now available online.
+                <br/>
+                The 2200-22-2200 hotline has been started from 1st July 2020 onwards.
+                <br/>
+                Phone:<a href="tel:2200-20-2200" >2200-20-2200</a> &emsp;
+                Email:<a href="chwes@gmail.com"> chwes@gmail.com</a>
+            </p> 
+        </footer>
+</body>
+
+</html>
+
+<!DOCTYPE html>
+<html>
+   
+<head>
+
+
+    <meta charset="utf-8" />
+    <meta name="keywords" content="Chinese,Western, food, ChWes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ChWes Restaurant's Menu</title>
+    <link href="../../navigation/navigation.css" rel="stylesheet" />
+    <link href="../../navigation/login.css" rel="stylesheet" />
+    <link href="chwes_menu1.css" rel="stylesheet" />
+    <link href="chwes_menu1_style.css" rel="stylesheet" />
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+
+</head>
+
+<body>
+    <header>
+        <nav>
+           
+            <ul class="topnav">
+                
+                <div class="centered_nav" id="sidenav">
+                    <!-- centered links -->
+                    <li><a href="../About Us/chwes_aboutUs.html" class="cool-link">About us</a></li>
+                    <li><a href="chwes_valueSetMeal.html" class="cool-link">Menu</a></li>
+                    <li><a href="../../harini/home page/home_page.html" id="home" >ChWes</a></li>
+
+                    <div class="dropdown">
+                        <li><button class="dropdownbtn">Support</button>
+                           <div class="dropdown_content">
+                                <a href="../../shau yhong xuan/customer feedback/customer_feedback.html">Customer Feedback</a>
+                                <a href="../../shau yhong xuan/contact us/contact_us.html">Contact us</a>
+                                <a href="../../David/faq/faq.html">FAQ</a>
+                            </div>
+                        </li>
+                    </div>
+
+                    <div class="dropdown">
+                        <li><button class="dropdownbtn">Account</button>
+                            <div class="dropdown_content">
+                                <a href="../../waichong/product tracking/delivery product.html">Order tracking</a>
+                                <a href="../../harini/reservation/reservation/reservation.html">Reservation</a>
+                                
+                            </div>
+                        </li>
+                    </div>
+                    
+                </div>
+               
+                <div class="right_nav"><!-- right-alligned links -->
+                    <li class="navright"><a href="../../waichong/add in cart/add to cart.html"><i class="fas   fa-shopping-cart"style="font-size:20px;"></i></a></li>
+                    <li class="navright" onclick="openForm()" style="cursor:pointer; ">
+                        <i class="far   fa-user"></i>
+                    </li>
+                </div>
+
+                <div class=openCloseBar>
+                    <button class="openBar" onclick="openSidebar()">&#9776;</button>
+                    <div id="mySideBar">
+                        
+                        <span onclick="closeSidebar()" class="closeBar">X</span>
+                        
+                        <li><a href="../About Us/chwes_aboutUs.html">About us</a></li>
+                        <li><a href="chwes_valueSetMeal.html">Menu</a></li>
+                        <li><a href="../../harini/reservation/reservation/reservation.html">Reservation</a></li>
+                        <li><a href="../../waichong/product tracking/delivery product.html">Order tracking</a></li>
+                        <li><a href="../../shau yhong xuan/customer feedback/customer_feedback.html">Customer Feedback</a></li>
+                        <li><a href="../../shau yhong xuan/contact us/contact_us.html">Contact us</a></li>
+                        <li><a href="../../David/faq/faq.html">FAQ</a></li>
+                        <li><a href="../../waichong/add in cart/add to cart.html"><i class="fas fa-shopping-cart" style="font-size:20px;"> </i><b>  SHOPPING CART</b></a></li>
+                        
+                    </div>
+                </div>
+                
+                    </form>
+                </div>
+            </ul>
+        </nav> 
+        <!--Pop up Login form-->
+        <div id="loginForm" class="pop-upForm" style="display:none; background-color:rgb(255,255,255);">
+            <form method="post">
+                <span onclick="closeForm()">
+                    <i class="fa">&#xf00d;</i>
+                </span>
+                <br>
+                <h2 style="text-align:center;">Login Form</h2>
+    
+
+                <div class="fillUp">
+                    <label for="username"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="username" required>
+                
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+                        
+                    <div id="rememberMe">
+                        <input type="checkbox" name="remember" id="rmb" checked > Remember Me
+                    </div>
+
+                    <input type="submit" value="Login">
+                    <input type="reset" value="Clear">
+
+                    <div class="psw" style="text-align:right;">Forgot <a href="#">password?</a></div>
+                </div>
+
+                <div class="newUser" style="text-align:center; padding-bottom:10px;">
+                    New User?<a href="../../David/membership/signUp.html">Sign Up for Free!</a>
+                </div>
+            </form>
+        </div>
+    </header>
+    
+    <section>
+        <div class="banner">
+        <img src="banner.png" alt="Banner" >
+        <div class="centered">Menu</div>
+        </div>
+        <h3>" We serve all types of food that can overwhelm your taste buds. "</h3>
+    </section>
+    <hr>
+    <div id="choice">        
+        <nav>
+            <ul>
+            <li><a href="chwes_valueSetMeal.html">Set</a></li>
+            <li><a href="chwes_breakfast.html">Breakfast</a></li>
+            <li><a href="chwes_westernFood.html">Western</a></li>
+            <li><a href="chwes_chineseFood.html">Chinese</a></li>
+            <li><a href="chwes_snack.html">Snack</a></li>
+            <li><a href="chwes_drinks.html">Drinks</a></li>
+        </ul>
+        </nav>
+    </div>
+    <hr>
+    <div class="menu">
+        <button class="block">Burger</button>
+        <div class="row">
+            <div class="column">
+                <a href="../Menu Description/Western Food/chwes_beefBurger.html"><img src="Western Food/chwes_beefBurger.jpg" alt="Beef Burger"></a>
+            </div>
+            <div class="column">
+                <a href="../Menu Description/Western Food/chwes_fishBurger.html"><img src="Western Food/chwes_fishBurger.jpg" alt="Fish Burger"></a>
+            </div>
+            <div class="column">
+                <a href="../Menu Description/Western Food/chwes_chickenBurger.html"><img src="Western Food/chwes_chickenBurger.jpg" alt="Chicken Burger" style="margin-bottom:30px;"></a>
+            </div>
+        </div>
+
+        <button class="block">Spaghetti</button>
+        <div class="row">
+            <div class="column" id="short">
+                <a href="../Menu Description/Western Food/chwes_aglioOlio.html"><img src="Western Food/chwes_aglio.jpg" alt="aglio E Olio"></a>
+            </div>
+            <div class="column">
+                <a href="../Menu Description/Western Food/chwes_cabonara.html"><img src="Western Food/chwes_cabonara.jpg" alt="Cabonara"></a>
+            </div>
+            <div class="column">
+                <a href="../Menu Description/Western Food/chwes_bolognese.html"><img src="Western Food/chwes_bolognese.jpg" alt="Bolognese"></a>
+            </div>
+        </div>
+      
+        <button class="block">Steak</button>
+       <div class="row">
+            <div class="column">
+                <a href="../Menu Description/Western Food/chwes_fishNchip.html"><img src="Western Food/chwes_fishNchip.jpg" alt="Fish N Chip"></a>
+            </div>
+            <div class="column">
+                <a href="../Menu Description/Western Food/chwes_beefSteak.html"><img src="Western Food/chwes_beefSteak.jpg" alt="Beef Steak"></a>
+            </div>
+            <div class="column">
+                <a href="../Menu Description/Western Food/chwes_grilledChickenChop.html"><img src="Western Food/chwes_grilledChickenChop.jpg" alt="Grilled Chicken Chop"></a>
+            </div>
+        </div>
+    
+        <button class="block">Pizza</button>
+        <div class="row">
+            <div class="column">
+                <a href="../Menu Description/Western Food/chwes_pizza.html"><img src="Western Food/chwes_pizza.jpg" alt="Pizza"></a>
+            </div>
+        </div>
+         
+    </div>
+
+    <script>
+        closeSidebar();
+        function openSidebar() {
+            document.getElementById("mySideBar").style.display = "block";
+        }
+            
+        function closeSidebar() {
+            document.getElementById("mySideBar").style.display = "none";
+        }
+        function closeForm(){
+            document.getElementById("loginForm").style.display="none";
+        }
+        function openForm(){
+            document.getElementById("loginForm").style.display="block";
+        }
+    </script>
+    <footer>
+        <p>
+            ChWes restaurant is now available online.
+            <br/>
+            The 2200-22-2200 hotline has been started from 1st July 2020 onwards.
+            <br/>
+            Phone:<a href="tel:2200-20-2200" >2200-20-2200</a> &emsp;
+            Email:<a href="chwes@gmail.com"> chwes@gmail.com</a>
+        </p> 
+    </footer>
+
+
+</body>
+
+</html>
